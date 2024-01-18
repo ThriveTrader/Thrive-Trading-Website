@@ -3,7 +3,7 @@ import { Carousel } from "@material-tailwind/react";
 
 const Imager = () => {
   return (
-    <div>Hey</div>
+    <div></div>
   )
 };
 
