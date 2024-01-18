@@ -4,10 +4,38 @@
 
 @layer base {
   html, body {
-    background: url("/Background.svg") no-repeat;
+    background: rgb(0, 0, 0);
     background-attachment: fixed;
     background-size: cover;
     margin-left: 3%;
     margin-right: 3%;
   }
+}
+
+.image {
+  transform: translate(4rem);
+  filter: drop-shadow(0 0 10px #27AAE1);
+}
+
+.imagess {
+  filter: drop-shadow(0 0 15px #27AAE1);
+}
+
+.bgm {
+  background-color: #27AAE1;
+}
+
+.drift {
+  transform: translate(0,-60px);
+}
+
+.glow-text {
+  font-size: 24px;  /* Adjust the font size as needed */
+  font-weight: bold;  /* You can adjust the font weight */
+  color: #ffffff;  /* Text color */
+  text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
+.glow-text:hover {
+  text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1;
 }

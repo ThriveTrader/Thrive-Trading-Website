@@ -14,6 +14,7 @@ import PopupWidget from "../components/popupWidget";
 import Contact from "../components/Contact";
 import Vid from "../components/Vid";
 import ContactS from "../components/ContactS";
+import Imager from "../components/Imager";
 
 const Home = () => {
   return (
@@ -31,8 +32,9 @@ const Home = () => {
       <Hero />
       <SectionTitle
         pretitle="Thrive Trading"
-        title="Be a Professional Trader with Me">
+        title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME">
       </SectionTitle>
+      <Imager />
       <Video />
       <SectionTitle
         pretitle=""
