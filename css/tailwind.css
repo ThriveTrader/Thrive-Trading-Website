@@ -13,29 +13,143 @@
 }
 
 .image {
-  transform: translate(4rem);
+  transform: translate(0,-3rem);
   filter: drop-shadow(0 0 10px #27AAE1);
+}
+
+.fixer {
+  right: 3%;
 }
 
 .imagess {
   filter: drop-shadow(0 0 15px #27AAE1);
 }
 
+@keyframes shader {
+  0% {
+    filter: drop-shadow(0 0 0)
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #27AAE1)
+  }
+  100% {
+    filter: drop-shadow(0 0 0)
+  }
+}
+
+.imagesss {
+  filter: drop-shadow(0 0 15px #27AAE1);
+  animation: shader 2s linear infinite;
+}
+
+.bgg {
+  margin: 0%;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
 .bgm {
   background-color: #27AAE1;
+}
+
+.MB {
+
 }
 
 .drift {
   transform: translate(0,-60px);
 }
 
+.telegram {
+  width: 2rem;
+}
+
+.te {
+  font-size: 200%;
+}
+
+.zeder {
+  z-index: 1000;
+}
+
+.texter {
+  font-size: 2rem;
+}
+
+.telegrams {
+  position: fixed;
+  z-index: 100000;
+  width: 2rem;
+}
+
+.glower {
+  font-size: 1.2rem;
+}
+
+.Closer {
+  top: 2rem;
+  right: 2rem;
+  position: fixed;
+  cursor: pointer;
+}
+
 .glow-text {
+  margin-top: 2rem;
   font-size: 24px;  /* Adjust the font size as needed */
   font-weight: bold;  /* You can adjust the font weight */
   color: #ffffff;  /* Text color */
   text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
 }
 
+.glow-texts {
+  margin-top: 4rem;
+  font-size: 4rem;  /* Adjust the font size as needed */
+  font-weight: bold;  /* You can adjust the font weight */
+  color: #ffffff;  /* Text color */
+  text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
+.backk {
+  background-color: rgb(14, 12, 12);
+  filter: drop-shadow(0 0 15px #27AAE1);
+}
+
 .glow-text:hover {
   text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1;
+}
+
+.TP {
+  z-index: 100;
+}
+
+@keyframes blink {
+  0% {
+    opacity:0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.Blinker {
+  animation: blink 4s linear infinite;
+}
+
+.Main_Color {
+  background-color: #27AAE1;
+}
+
+.popup {
+  display: none;
+}
+
+.popup.active {
+  display: flex;
 }

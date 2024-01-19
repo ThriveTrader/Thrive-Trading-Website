@@ -7,7 +7,7 @@ import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Testimonials from "../components/testimonials";
+import Sect  from "../components/Sect";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
@@ -15,6 +15,7 @@ import Contact from "../components/Contact";
 import Vid from "../components/Vid";
 import ContactS from "../components/ContactS";
 import Imager from "../components/Imager";
+import { Carousel } from "@material-tailwind/react";
 
 const Home = () => {
   return (
@@ -31,11 +32,13 @@ const Home = () => {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Thrive Trading"
+        pretitle=""
         title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME">
       </SectionTitle>
       <Imager />
-      <Video />
+      <Sect pretitle="" title="JOIN THE FAMILY OF 40K PROFITABLE TRADERS WHO ARE ACTIVELY TRADING WITH US FROM YEARS.">
+
+      </Sect>
       <SectionTitle
         pretitle=""
         title="RESULTS">
