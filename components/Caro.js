@@ -25,25 +25,15 @@ export default function Caro({
     setCurr((curr) => (curr === Slides.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="overflow-hidden justify-center flex relative">
+    <div className="overflow-hidden w-80 justify-center items-center flex relative">
       <div
-        className="flex transition-transform ease-out duration-500"
+        className="flex  transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {Slides}
       </div>
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <ArrowLeftCircleIcon
-          width={30}
-          className="text-white cursor-pointer"
-          onClick={next}
-          size={80}
-        />
-        <ArrowRightCircleIcon
-          width={30}
-          className=" rounded-full cursor-pointer text-white"
-          onClick={prev}
-        />
+      <div className=" inset-0 flex items-center justify-between ">
+        
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
-import Sect  from "../components/Sect";
+import Sect from "../components/Sect";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
@@ -16,60 +16,59 @@ import Vid from "../components/Vid";
 import ContactS from "../components/ContactS";
 import Imager from "../components/Imager";
 import { Carousel } from "@material-tailwind/react";
+import Card from "../components/Card";
 
 const Home = () => {
   return (
     <>
       <Head>
         <title>Thrive Trader</title>
-        <meta
-          name="description"
-          content="Learn Coding with Abhishek"
-        />
+        <meta name="description" content="Learn Coding with Abhishek" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      <Hero />
-      <SectionTitle
+      <article className="rounded-xl border border-black w-full bggg p-4">
+        <Hero />
+      </article>
+      <br></br>
+      <article className="rounded-xl border border-black  w-full bggg p-4">
+        <SectionTitle
+          pretitle=""
+          title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME"
+        ></SectionTitle>
+        <Imager />
+      </article>
+      <br></br>
+      <article className="rounded-xl border border-black  w-full bggg ">
+      <Sect
         pretitle=""
-        title="SEE WHAT MY CLIENT'S ARE SAYING ABOUT ME">
-      </SectionTitle>
-      <Imager />
-      <Sect pretitle="" title="JOIN THE FAMILY OF 40K PROFITABLE TRADERS WHO ARE ACTIVELY TRADING WITH US FROM YEARS.">
-
-      </Sect>
-      <SectionTitle
-        pretitle=""
-        title="RESULTS">
-      </SectionTitle>
+        title="JOIN THE FAMILY OF 40K PROFITABLE TRADERS WHO ARE ACTIVELY TRADING WITH US FROM YEARS."
+      ></Sect>
+      </article>
+      <br></br>
+      <article className="rounded-xl border border-black  w-full bggg ">
+      <SectionTitle pretitle="" title="RESULTS"></SectionTitle>
       <Video />
-      <Video />
-      <SectionTitle
-        pretitle=""
-        title="CLIENT TESTIMONIALS"></SectionTitle>
-      {/*
-      <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-        </SectionTitle> 
+      </article>
+      <br></br>
+      <article className="rounded-xl border border-black w-full bggg ">
+      <Sect pretitle="" title="WHAT WE OFFER"></Sect>
       <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />*/}
-      <Vid />
-      <Video />
-      <SectionTitle
-        pretitle=""
-        title="JOIN MY TELEGRAM">
-      </SectionTitle>
+      </article>
+      <br></br>
+      <Card />
+      <br></br>
+      <article className="rounded-xl border border-black w-full bggg ">
+      <SectionTitle pretitle="" title="JOIN MY TELEGRAM"></SectionTitle>
+      <br></br>
       <Contact />
-      <SectionTitle
-        pretitle=""
-        title="FOLLOW MY PAGES"></SectionTitle>
-        <ContactS />
-       {/*
+      <br></br>
+      <SectionTitle pretitle="" title="FOLLOW MY PAGES"></SectionTitle>
+      <ContactS />
+      <br></br>
+      </article>
+      {/*
       <Testimonials /> 
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
@@ -81,6 +80,6 @@ const Home = () => {
       <PopupWidget />
     </>
   );
-}
+};
 
 export default Home;

@@ -3,39 +3,57 @@ import Container from "./container";
 import heroImg from "../public/img/hero.png";
 import React, { useState, useEffect } from "react";
 import MyModal from "./MyModal";
+import {
+  ArrowRightCircleIcon,
+  DocumentCheckIcon,
+  ListBulletIcon,
+} from "@heroicons/react/24/solid";
 
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
 
-  const HandleClose = () => setShowPopup(false)
+  const HandleClose = () => setShowPopup(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       console.log("Popup should be shown now");
       setShowPopup(true);
-    }, 2000); 
+    }, 2000);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
   return (
     <>
-      {showPopup && (
-        <MyModal onClose={HandleClose} visible={showPopup} />
-      )}
+      {showPopup && <MyModal onClose={HandleClose} visible={showPopup} />}
       <Container className="flex flex-wrap ">
         <div className="flex items-center drift w-full lg:w-1/2">
-          <div className="max-w-2xl mb-12">
-            <h1 className="text-4xl glow-text font-bold leading-snug tracking-tight text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight ">
-              TRADING NOW EASIER
-            </h1>
-            <p className="py-5 text-xl leading-normal text-white lg:text-xl xl:text-2xl dark:text-white">
-              Lorem Ipsum is a free landing page & marketing website template
-              for startups and indie projects. Its built with Next.js &
-              TailwindCSS. And its completely open-source.
-            </p>
+          <div className="max-w-2xl">
+            <h1 className="glow-text font-bold ">TRADING NOW EASIER</h1>
+            <ul class="list-disc mt-5  text-xl font-bold leading-normal text-white lg:text-xl xl:text-2xl dark:text-white">
+              <li class="flex items-center">
+                <span class="mr-2">🎯</span>
+                DAILY TARGET - (100-200 POINTS)
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">⛔</span>
+                STOP LOSS - (25-30 POINTS)
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">📞</span>
+                CALLS - (4-CALLS)
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">💹</span>
+                BANKNIFTY & NIFTY - (FREE CALLS)
+              </li>
+              <li class="flex items-center">
+                <span class="mr-2">💰</span>
+                CAPITAL - 10K - 15K
+              </li>
+            </ul>
 
-            <div className="flex flex-col imagess items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex mt-5 flex-col imagess items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                 target="_blank"
@@ -58,36 +76,11 @@ const Hero = () => {
               src={"/Main.svg"}
               width="400"
               height="400"
-              className={"object-cover image mar"}
+              className={"object-cover mt-10image mar"}
               alt="Hero Illustration"
               loading="eager"
             />
           </div>
-        </div>
-      </Container>
-      <Container>
-        <div className="flex flex-col justify-center">
-          <div className="text-xl text-center text-white dark:text-white"></div>
-          {/*
-          <div className="flex flex-wrap justify-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <AmazonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <VerizonLogo />
-            </div>
-            <div className="text-gray-400 dark:text-gray-400">
-              <MicrosoftLogo />
-            </div>
-            <div className="pt-1 text-gray-400 dark:text-gray-400">
-              <NetflixLogo />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <SonyLogo />
-            </div>
-            
-          </div>
-*/}
         </div>
       </Container>
     </>

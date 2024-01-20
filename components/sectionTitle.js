@@ -4,7 +4,7 @@ import Container from "./container";
 const SectionTitle = (props) => {
   return (
     <Container
-      className={`flex w-full flex-col mt-4 ${
+      className={`flex w-full flex-col  ${
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
       {props.pretitle && (
@@ -20,7 +20,7 @@ const SectionTitle = (props) => {
       )}
 
       {props.children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal text-white lg:text-xl xl:text-xl dark:text-white">
+        <p className="max-w-2xl  text-lg leading-normal text-white lg:text-xl xl:text-xl dark:text-white">
           {props.children}
         </p>
       )}

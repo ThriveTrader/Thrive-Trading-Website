@@ -1,3 +1,4 @@
+// Sect Component
 import React from "react";
 import Container from "./container";
 
@@ -6,9 +7,9 @@ const Sect = (props) => {
     props.align === "left" ? "" : "items-center justify-center text-center";
 
   return (
-    <div className="bg-black  bg-opacity-30  w-full rounded-xl" >
+    <div className="bg-black  bg-opacity-30 w-full rounded-xl">
       <Container
-        className={`flex w-full  flex-col  ${alignmentClass}`}
+        className={`  flex w-full flex-col ${alignmentClass}`}
       >
         {props.pretitle && (
           <div className="text-sm glow-text font-bold tracking-wider text-white uppercase">
@@ -17,7 +18,7 @@ const Sect = (props) => {
         )}
 
         {props.title && (
-          <h2 className=" glow-texts ">
+          <h2 className="max-w-8xl glow-text text-5xl font-bold leading-snug tracking-tight text-white lg:leading-tight lg:text-5xl dark:text-white">
             {props.title}
           </h2>
         )}

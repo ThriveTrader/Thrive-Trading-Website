@@ -50,12 +50,12 @@ const Linkedin = ({ size = 50 }) => (
 
 const Contact = (props) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <a href="#" style={{ display: 'inline-block', textAlign: 'center' }}>
         <img
           src="/Telegram.png" // Replace with the actual URL of your image
           alt="Button Image"
-          style={{ width: '400px' }} // Adjust the width and height as needed
+          style={{ width: '200px' }} // Adjust the width and height as needed
         />
       </a>
     </div>

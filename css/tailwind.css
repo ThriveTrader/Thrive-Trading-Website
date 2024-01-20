@@ -12,6 +12,16 @@
   }
 }
 
+.cont::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white; /* Set your desired background color */
+  z-index: -100;
+}
+
 .image {
   transform: translate(0,-3rem);
   filter: drop-shadow(0 0 10px #27AAE1);
@@ -95,19 +105,44 @@
 }
 
 .glow-text {
-  margin-top: 2rem;
-  font-size: 24px;  /* Adjust the font size as needed */
+  font-size: 3rem;  /* Adjust the font size as needed */
   font-weight: bold;  /* You can adjust the font weight */
   color: #ffffff;  /* Text color */
   text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
 }
 
+.bggg {
+  background-color: #111111;
+  outline: black;
+}
+
+.mkk {
+  box-shadow: 0 0 1px #27AAE1, 0 0 10px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
 .glow-texts {
   margin-top: 4rem;
-  font-size: 4rem;  /* Adjust the font size as needed */
+  font-size: 3rem;  /* Adjust the font size as needed */
   font-weight: bold;  /* You can adjust the font weight */
   color: #ffffff;  /* Text color */
   text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
+.glow-textss {
+  margin-top: 4rem;
+  font-size: 3rem;  /* Adjust the font size as needed */
+  font-weight: bold;  /* You can adjust the font weight */
+  color: #ffffff;  /* Text color */
+  text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
+.DD {
+  transform: translate(0,-2rem);
+}
+
+.siz {
+  scale: 0.5;
+  position: relative;
 }
 
 .backk {
