@@ -1,0 +1,5 @@
+---
+deployments:
+  - deployment:
+      branch: main  # Change this to the branch you want to deploy
+      destination: public_html  # Change this to your hosting directory
