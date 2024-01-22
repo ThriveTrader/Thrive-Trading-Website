@@ -23,14 +23,14 @@ const Navbar = () => {
                   <span className="flex items-center space-x-2 text-2xl font-medium text-white dark:text-white">
                     <span>
                       <Image
-                        src="/img/logo.svg"
+                        src="/img/logo.jpg"
                         alt="N"
                         width="32"
                         height="32"
-                        className="w-8"
+                        className="w-8 rounded"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span>Thrive Trader</span>
                   </span>
                 </Link>
 

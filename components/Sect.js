@@ -18,7 +18,7 @@ const Sect = (props) => {
         )}
 
         {props.title && (
-          <h2 className="max-w-8xl glow-text text-5xl font-bold leading-snug tracking-tight text-white lg:leading-tight lg:text-5xl dark:text-white">
+          <h2 className="max-w-8xl glow-texty ">
             {props.title}
           </h2>
         )}

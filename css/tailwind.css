@@ -111,6 +111,13 @@
   text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
 }
 
+.glow-texty {
+  font-size: 2rem;  /* Adjust the font size as needed */
+  font-weight: bold;  /* You can adjust the font weight */
+  color: #ffffff;  /* Text color */
+  text-shadow: 0 0 1px #27AAE1, 0 0 20px #27AAE1, 0 0 15px #27AAE1; /* Adjust the shadow size and color */
+}
+
 .bggg {
   background-color: #111111;
   outline: black;

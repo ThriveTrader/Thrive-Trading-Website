@@ -20,7 +20,7 @@ export default function MyModal({ visible, onClose }) {
         />
           <div className="flex flex-col imagesss items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
             <a
-              href="https://google.com"
+              href="https://t.me/Thrive_trader"
               target="_blank"
               rel="noopener"
               className="flex items-center glower px-2 py-2 text-xl font-medium text-center text-white bgm rounded-md"

@@ -14,7 +14,6 @@ const PopupWidget = () => {
   });
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState("");
-  const [showPopup, setShowPopup] = useState(false);
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
@@ -64,7 +63,7 @@ const PopupWidget = () => {
                 leaveTo="opacity-0 -rotate-45"
                 className="absolute w-6 h-6 text-white"
               >
-                <a href="https://google.com">
+                <a href="https://t.me/Thrive_trader">
                   <img
                     src="/Telegram.png"
                     alt="Telegram Logo"

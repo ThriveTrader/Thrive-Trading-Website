@@ -51,7 +51,7 @@ const Linkedin = ({ size = 50 }) => (
 const Contact = (props) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <a href="#" style={{ display: 'inline-block', textAlign: 'center' }}>
+      <a href="https://t.me/Thrive_trader" style={{ display: 'inline-block', textAlign: 'center' }}>
         <img
           src="/Telegram.png" // Replace with the actual URL of your image
           alt="Button Image"

@@ -18,13 +18,13 @@ export default function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="/img/logo.jpg"
                   alt="N"
                   width="32"
                   height="32"
                   className="w-8"
                 />
-                <span>Nextly</span>
+                <span>Thrive Trader</span>
               </Link>
             </div>
 
@@ -81,16 +81,9 @@ export default function Footer() {
           <div className="">
             <div className="text-white">Follow us</div>
             <div className="flex mt-5 space-x-5 text-white dark:text-white">
+              
               <a
-                href="https://twitter.com/web3templates"
-                target="_blank"
-                rel="noopener"
-              >
-                <span className="sr-only">Twitter</span>
-                <Twitter />
-              </a>
-              <a
-                href="https://facebook.com/web3templates"
+                href="https://www.facebook.com/profile.php?id=61554979540259"
                 target="_blank"
                 rel="noopener"
               >
@@ -98,16 +91,12 @@ export default function Footer() {
                 <Facebook />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="https://www.instagram.com/abhishekthrive/"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
-              </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                <span className="sr-only">Linkedin</span>
-                <Linkedin />
               </a>
             </div>
           </div>
@@ -115,17 +104,12 @@ export default function Footer() {
 
         <div className="my-10 text-sm text-center text-white dark:text-white">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
-          <a href="https://web3templates.com/" target="_blank" rel="noopener">
-            Web3Templates.
+          <a href="https://maxupviral.com" target="_blank" rel="noopener">
+            Maxup Technology.
           </a>{" "}
-          Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
-          </a>
         </div>
       </Container>
       {/* Do not remove this */}
-      <Backlink />
     </div>
   );
 }
